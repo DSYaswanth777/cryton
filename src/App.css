@@ -1,0 +1,12 @@
+:root{
+  --accent-color:#CE1A11;
+  --primary-color:#191919;
+  --bg-dark:#222222;
+  --white-color:#FFFFFF;
+}
+
+body{
+  background-color:var(--primary-color);
+  color:var(--white-color);
+  font-family: "Poppins", serif;
+}
