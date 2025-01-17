@@ -1,12 +1,296 @@
-:root{
-  --accent-color:#CE1A11;
-  --primary-color:#191919;
-  --bg-dark:#222222;
-  --white-color:#FFFFFF;
+:root {
+  --accent-color: #CE1A11;
+  --base-color: #191919;
+  /* Renamed from primary-color */
+  --secondary-dark: #222222;
+  /* Renamed from bg-dark */
+  --white-color: #FFFFFF;
+  --light-bg:#2A2A2A;
 }
 
-body{
-  background-color:var(--primary-color);
-  color:var(--white-color);
-  font-family: "Poppins", serif;
+body {
+  background-color: var(--base-color) !important;
+  color: var(--white-color) !important;
+  font-family: "Poppins", serif !important;
+}
+
+/* Background classes with meaningful names */
+
+/* Accent color */
+.bg-accent {
+  background-color: var(--accent-color) !important;
+  color: var(--white-color) !important;
+  /* Ensures text is readable */
+}
+
+/* Base color */
+.bg-base {
+  background-color: var(--base-color) !important;
+  color: var(--white-color) !important;
+}
+
+/* Secondary dark background */
+.bg-secondary-dark {
+  background-color: var(--secondary-dark) !important;
+  color: var(--white-color) !important;
+}
+
+/* White color */
+.bg-white-custom {
+  background-color: var(--white-color) !important;
+  color: var(--base-color) !important;
+  /* Ensures text is readable */
+}
+
+/* Button styling using colors */
+.btn-accent {
+  background-color: var(--accent-color) !important;
+  color: var(--white-color) !important;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-accent:hover {
+  background-color: #b3120c !important;
+  color: var(--white-color) !important;
+  /* Darker accent for hover */
+}
+
+.btn-secondary-dark {
+  background-color: var(--secondary-dark) !important;
+  color: var(--white-color) !important;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-secondary-dark:hover {
+  background-color: #191919 !important;
+  /* Slightly lighter for hover */
+}
+
+/* Borders using accent color */
+.border-accent {
+  border: 2px solid var(--accent-color) !important;
+}
+
+/* Background utilities for sections */
+.section-accent {
+  background-color: var(--accent-color) !important;
+  color: var(--white-color) !important;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.section-base {
+  background-color: var(--base-color) !important;
+  color: var(--white-color) !important;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.section-secondary-dark {
+  background-color: var(--secondary-dark) !important;
+  color: var(--white-color) !important;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.section-white-custom {
+  background-color: var(--white-color) !important;
+  color: var(--base-color) !important;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.horizontal-line {
+  background-color: #282828;
+  height: 4px;
+}
+
+.sideNav {
+  width: 300px;
+  border-right: 2px solid #282828;
+  ;
+}
+
+.nav-item:hover {
+  background-color: #2D2D2D;
+  border-radius: 8px;
+
+}
+
+.nav-item .active {
+  background-color: #2D2D2D;
+  border-radius: 8px;
+
+}
+
+.navbar-nav .nav-link .nav-icon {
+  fill: #FFFFFF;
+  /* Default icon color */
+}
+
+.navbar-nav .nav-link.active .nav-icon {
+  fill: #CE1A11;
+  /* Active icon color */
+}
+
+.outlineAccentBtn {
+  border: solid 2px var(--accent-color) !important;
+  background: rgba(206, 26, 17, 0.05) !important;
+
+
+
+}
+
+.navIcon {
+  border-radius: 10px;
+  border: 1.25px solid #323232;
+  padding: 12.5px;
+}
+
+.lightText {
+  color: #8F8FAC;
+}
+
+.balanceCard {
+  color: var(--white-color);
+  display: flex;
+  width: 345px;
+  height: 180px;
+  padding: 24px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-radius: 16px;
+  background: #222;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.balanceCard>p,
+h2 {
+  z-index: 1;
+
+}
+
+.balacnceCardGradient {
+  position: absolute;
+  /* top: 0; */
+  left: -235px;
+  bottom: -235.468px;
+  width: 566.989px;
+
+  height: 328.564px;
+  transform: rotate(-17.218deg);
+  border-radius: 566.989px;
+  background: rgba(184, 27, 19, 0.30);
+  filter: blur(50px);
+}
+
+.balanceGridIcons {
+  border-radius: 8px;
+  border: 1px solid var(--border-gradient, rgba(255, 255, 255, 0.22));
+  background: rgba(254, 254, 254, 0.08);
+  display: flex;
+  width: 73px;
+  padding: 12px 15px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+}
+
+.balanceGridIcons>img {
+  width: 24px;
+  height: 24px;
+}
+
+.balanceGridIcons>p {
+  padding: 0;
+  font-size: 14px;
+  margin: 0;
+}
+
+.people {
+  /* width: 35.714px;
+  height: 35.714px; */
+  flex-shrink: 0;
+}
+
+
+.peopleContainer {
+  border-radius: 64.303px;
+  width: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  height: 40px;
+  background: var(--G1, linear-gradient(150deg, #00F378 7.49%, #00DB3C 101.79%));
+}
+
+.addIcon {
+  stroke-width: 2px;
+  stroke: var(--Neutrals-White, #FFF);
+  width: 16px;
+  height: 24px;
+  flex-shrink: 0;
+
+}
+
+.addIconContainer {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  padding: 14px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 64.303px;
+  border: 2px dashed var(--Neutrals-White, #FFF);
+}
+.textRed{
+  color: var(--accent-color);
+  opacity: 1 !important;
+}
+.price{
+  font-size: 12px;
+  stroke: var(--Neutrals-White, #FFF);
+  /* opacity: 0.5; */
+}
+.asset{
+  border-bottom: 2px solid #282828;
+}
+.textGreen{
+  color: var(--Success-Success200, #00A244);
+
+}
+.textLightGreen{
+  color: var(--Success-Success200, #8FFFBE);
+
+}
+.lightGrayText{
+  color: #AAB3BB;
+  font-size: 12px;
+}
+.transcation{
+  background-color: var(--light-bg);
+}
+.Chart{
+  border-radius: 16px;
+background: #202020;
+}
+
+.balanceCard{
+  background-image: url(./assets/Icons/TRXGradient.svg);
+  background-size: cover;
 }
