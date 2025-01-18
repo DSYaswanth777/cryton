@@ -5,7 +5,7 @@
   --secondary-dark: #222222;
   /* Renamed from bg-dark */
   --white-color: #FFFFFF;
-  --light-bg:#2A2A2A;
+  --light-bg: #2A2A2A;
 }
 
 body {
@@ -14,7 +14,9 @@ body {
   font-family: "Poppins", serif !important;
 }
 
-/* Background classes with meaningful names */
+a {
+  text-decoration: none !important;
+}
 
 /* Accent color */
 .bg-accent {
@@ -258,56 +260,70 @@ h2 {
   border-radius: 64.303px;
   border: 2px dashed var(--Neutrals-White, #FFF);
 }
-.textRed{
+
+.textRed {
   color: var(--accent-color);
   opacity: 1 !important;
 }
-.price{
+
+.price {
   font-size: 12px;
+  color: var(--secondary-dark);
   stroke: var(--Neutrals-White, #FFF);
   /* opacity: 0.5; */
 }
-.asset{
+
+.asset {
   border-bottom: 2px solid #282828;
 }
-.textGreen{
+
+.textGreen {
   color: var(--Success-Success200, #00A244);
 
 }
-.textLightGreen{
+
+.textLightGreen {
   color: var(--Success-Success200, #8FFFBE);
 
 }
-.lightGrayText{
+
+.lightGrayText {
   color: #AAB3BB;
   font-size: 12px;
 }
-.transcation{
+
+.transcation {
   background-color: var(--light-bg);
 }
-.Chart{
+
+.Chart {
   border-radius: 16px;
-background: #202020;
+  background: #202020;
 }
 
-.balanceCard{
+.balanceCard {
   background-image: url(./assets/Icons/TRXGradient.svg);
   background-size: cover;
 }
-.textRed{
+
+.textRed {
   color: #E06963;
 
 
 }
-.textYellow{
+
+.textYellow {
   color: #F7931A;
 
 
 }
+
 .assets-container {
-  max-height: 400px; /* Adjust the height as per your design */
+  max-height: 400px;
+  /* Adjust the height as per your design */
   overflow-y: auto;
-  padding-right: 8px; /* Prevent content from being cut off when scrolled */
+  padding-right: 8px;
+  /* Prevent content from being cut off when scrolled */
 }
 
 
@@ -317,7 +333,7 @@ background: #202020;
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background:var(--secondary-dark);
+  background: var(--secondary-dark);
 }
 
 /* Handle */
@@ -329,7 +345,9 @@ background: #202020;
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
 ::placeholder {
-  color:#56566B !important;
-  opacity: 1; /* Firefox */
+  color: #56566B !important;
+  opacity: 1;
+  /* Firefox */
 }

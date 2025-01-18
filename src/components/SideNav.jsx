@@ -87,7 +87,7 @@ const SideNav = () => {
 
   return (
     <div
-      className="bg-secondary-dark text-white d-flex flex-column p-3 sideNav d-none d-md-block"
+      className="bg-secondary-dark text-white d-flex flex-column p-3 sideNav "
       style={{ height: "100vh" }}
     >
       {/* Logo Section */}

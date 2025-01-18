@@ -6,9 +6,9 @@ function AllTranscations() {
       <div className="d-flex justify-content-between align-items-center mb-2">
         <p className="fw-bold">Recent Transactions</p>
 
-        <small className="price opacity-50 text-end">
+        <a href="/transaction-history" className="price opacity-50 text-white  text-end">
           View All Transactions
-        </small>
+        </a>
       </div>
     </>
   );
